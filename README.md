@@ -72,3 +72,29 @@ Demonstration and documentation of OracleDBProjects
 #### 14. Documentation and Knowledge Transfer:
    - Create detailed documentation for each step of the project.
    - Provide training sessions for team members involved in maintenance.
+
+#### Sample Reports
+   - Product Sales Report
+
+| Product Category | Product Name       | Total Sales Amount |
+|-------------------|---------------------|---------------------|
+| Electronics      | Laptop Pro          | $150,000.00        |
+| Clothing          | Summer T-Shirts     | $80,000.00         |
+| ...               | ...                 | ...                 |
+
+   -  Top Selling Products Report
+
+| Rank | Product Name       | Total Quantity Sold |
+|------|---------------------|----------------------|
+| 1    | Laptop Pro          | 500 units            |
+| 2    | Summer T-Shirts     | 300 units            |
+| ...  | ...                 | ...                  |
+
+   -  Monthly Sales Trend Report
+
+| Month    | Monthly Sales Amount |
+|----------|------------------------|
+| 2023-01  | $200,000.00           |
+| 2023-02  | $180,000.00           |
+| ...      | ...                    |
+
