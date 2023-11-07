@@ -17,6 +17,25 @@ Demonstration and documentation of OracleDBProjects
       - **Product_Dim:** Details about products, including categories, prices, and inventory.
       - **Store_Dim:** Information about retail stores, locations, and performance metrics.
       - **Customer_Dim:** Customer profiles, preferences, and demographics.
+    
+     
+Sample
+```sql
+CREATE TABLE Sales_Fact (
+    sale_id NUMBER PRIMARY KEY,
+    date_id NUMBER,
+    product_id NUMBER,
+    store_id NUMBER,
+    customer_id NUMBER,
+    sales_amount NUMBER(10, 2),
+    quantity_sold NUMBER,
+    -- other relevant metrics
+    CONSTRAINT fk_date FOREIGN KEY (date_id) REFERENCES Date_Dim(date_id),
+    CONSTRAINT fk_product FOREIGN KEY (product_id) REFERENCES Product_Dim(product_id),
+    CONSTRAINT fk_store FOREIGN KEY (store_id) REFERENCES Store_Dim(store_id),
+    CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES Customer_Dim(customer_id)
+);
+```
 
 #### 3. Set Up Oracle Database:
    - Install Oracle Database on a dedicated server.
